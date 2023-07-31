@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280" bgColor="#000000">
+  <displayList>
+    <image id="n34_kup6" name="n34" src="xr8o4q" fileName="image/prompt_back.png" xy="0,-210" size="720,1700">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n3_kup6" name="n3" xy="14,165" size="692,48" fontSize="35" color="#ffffff" align="center" autoSize="none" text="下面这个是你的城堡，一个有六个据点"/>
+    <text id="n6_kup6" name="n6" xy="14,491" size="692,48" fontSize="35" color="#ffffff" align="center" autoSize="none" text="一共会有20位勇者进攻我们的城堡"/>
+    <image id="n8_kup6" name="n8" src="l8cm20" fileName="image/heroes/heroes_1.PNG" xy="81,563" size="50,50" group="n14_kup6" aspect="true"/>
+    <image id="n9_kup6" name="n9" src="l8cm1z" fileName="image/heroes/heroes_10.PNG" xy="149,563" size="50,50" group="n14_kup6" aspect="true"/>
+    <image id="n10_kup6" name="n10" src="l8cm1k" fileName="image/heroes/heroes_11.PNG" xy="217,563" size="50,50" group="n14_kup6" aspect="true"/>
+    <image id="n11_kup6" name="n11" src="l8cm1q" fileName="image/heroes/heroes_17.PNG" xy="285,563" size="50,50" group="n14_kup6" aspect="true"/>
+    <image id="n12_kup6" name="n12" src="l8cm1t" fileName="image/heroes/heroes_2.PNG" xy="353,563" size="50,50" group="n14_kup6" aspect="true"/>
+    <image id="n13_kup6" name="n13" src="l8cm1w" fileName="image/heroes/heroes_5.PNG" xy="421,563" size="50,50" group="n14_kup6" aspect="true"/>
+    <image id="n16_kup6" name="n16" src="l8cm1y" fileName="image/heroes/heroes_7.PNG" xy="489,563" size="50,50" group="n14_kup6" aspect="true"/>
+    <text id="n15_kup6" name="n15" xy="557,563" size="109,48" group="n14_kup6" fontSize="35" color="#ffffff" text="。。。"/>
+    <group id="n14_kup6" name="n14" xy="81,563" size="585,50" advanced="true" layout="hz" colGap="18" excludeInvisibles="true"/>
+    <text id="n1_kup6" name="n1" xy="138,91" size="144,48" group="n17_kup6" fontSize="35" color="#ffffff" text="这个是你"/>
+    <image id="n2_kup6" name="n2" src="l8cm23" fileName="image/lich_lord.png" xy="299,82" size="59,59" group="n17_kup6" aspect="true"/>
+    <text id="n4_kup6" name="n4" xy="368,91" size="214,48" group="n17_kup6" fontSize="35" color="#ffffff" text="你是一个领主"/>
+    <group id="n17_kup6" name="n17" xy="138,82" size="444,59"/>
+    <text id="n18_kup6" name="n18" xy="14,642" size="692,93" fontSize="35" color="#ffffff" autoSize="none" text="我们需要通过三消的方式，合成怪物，抵御勇者进攻"/>
+    <image id="n23_kup6" name="n23" src="l8cm1j" fileName="image/grid_back.png" xy="70,748" size="80,80" group="n26_kup6" aspect="true"/>
+    <image id="n24_kup6" name="n24" src="l8cm1j" fileName="image/grid_back.png" xy="70,828" size="80,80" group="n26_kup6" aspect="true"/>
+    <image id="n25_kup6" name="n25" src="l8cm1j" fileName="image/grid_back.png" xy="70,908" size="80,80" group="n26_kup6" aspect="true"/>
+    <group id="n26_kup6" name="n26" xy="70,748" size="80,240" group="n27_kup6" advanced="true" layout="vt" excludeInvisibles="true"/>
+    <image id="n19_kup6" name="n19" src="qr7511" fileName="image/monster/monsters_2.PNG" xy="78,756" size="64,64" group="n22_kup6" aspect="true"/>
+    <image id="n20_kup6" name="n20" src="qr7511" fileName="image/monster/monsters_2.PNG" xy="78,836" size="64,64" group="n22_kup6" aspect="true"/>
+    <image id="n21_kup6" name="n21" src="qr7511" fileName="image/monster/monsters_2.PNG" xy="78,916" size="64,64" group="n22_kup6" aspect="true"/>
+    <group id="n22_kup6" name="n22" xy="78,756" size="64,224" group="n27_kup6" advanced="true" layout="vt" lineGap="16" excludeInvisibles="true"/>
+    <group id="n27_kup6" name="n27" xy="70,748" size="80,240" group="n32_kup6" advanced="true"/>
+    <text id="n28_kup6" name="n28" xy="203,804" size="92,124" group="n32_kup6" fontSize="94" color="#ffffff" autoSize="none" text="-&gt;"/>
+    <component id="n30_kup6" name="n30" src="qmkm37" fileName="ui/comp/Tube.xml" xy="348,720" pivot="0.5,0" size="40,120" group="n32_kup6" aspect="true" scale="2,2"/>
+    <text id="n29_kup6" name="n29" xy="441,800" size="92,124" group="n32_kup6" fontSize="94" color="#ffffff" autoSize="none" text="-&gt;"/>
+    <image id="n31_kup6" name="n31" src="qr7511" fileName="image/monster/monsters_2.PNG" xy="586,828" size="64,64" group="n32_kup6" aspect="true"/>
+    <group id="n32_kup6" name="n32" xy="70,720" size="580,268" advanced="true" layout="hz" colGap="53"/>
+    <component id="n33_kup6" name="btnClose" src="iaj515" fileName="ui/button/btn_close.xml" pkg="yled3jwo" xy="321,1137" size="78,93" aspect="true">
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <image id="n35_kup6" name="n35" src="xr8o4n" fileName="image/map/spell_back.png" xy="216,227" size="287,240" group="n37_kup6"/>
+    <image id="n36_kup6" name="n36" src="xr8o48" fileName="image/map/map.png" xy="229,239" size="261,216" group="n37_kup6" aspect="true"/>
+    <group id="n37_kup6" name="n37" xy="216,227" size="287,240"/>
+    <image id="n38_kup6" name="n38" src="xr8o47" fileName="image/map/map_node.png" xy="285,406" size="20,20" aspect="true"/>
+    <image id="n39_kup6" name="n39" src="xr8o47" fileName="image/map/map_node.png" xy="413,401" size="20,20" aspect="true"/>
+    <image id="n40_kup6" name="n40" src="xr8o47" fileName="image/map/map_node.png" xy="410,359" size="20,20" aspect="true"/>
+    <image id="n41_kup6" name="n41" src="xr8o47" fileName="image/map/map_node.png" xy="320,350" size="20,20" aspect="true"/>
+    <image id="n42_kup6" name="n42" src="xr8o47" fileName="image/map/map_node.png" xy="250,360" size="20,20" aspect="true"/>
+    <image id="n43_kup6" name="n43" src="xr8o47" fileName="image/map/map_node.png" xy="285,275" size="20,20" aspect="true"/>
+    <image id="n44_kup6" name="n44" src="xr8o47" fileName="image/map/map_node.png" xy="235,251" size="20,20" aspect="true"/>
+    <text id="n45_kup6" name="n45" xy="14,1010" size="692,101" fontSize="35" color="#ffffff" autoSize="none" text="勇者大约每隔60s前进一个据点，阻挡勇者的前进吧！"/>
+  </displayList>
+</component>

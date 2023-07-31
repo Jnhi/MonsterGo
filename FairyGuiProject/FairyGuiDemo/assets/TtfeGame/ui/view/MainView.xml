@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280">
+  <displayList>
+    <graph id="n0_ae8w" name="bg" xy="0,0" size="720,1280" type="rect" lineSize="0" lineColor="#00000000" fillColor="#fffaf7ef">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2_ae8w" name="n2" xy="283,25" size="154,102" group="n5_ae8w" type="rect" lineColor="#00000000" fillColor="#ffb2a69a"/>
+    <text id="n4_ae8w" name="n4" xy="288,30" size="144,54" group="n5_ae8w" fontSize="40" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" text="得分"/>
+    <text id="n6_ae8w" name="txtScore" xy="288,72" size="144,54" group="n5_ae8w" fontSize="40" color="#f1efed" align="center" vAlign="middle" autoSize="none" bold="true" text="0"/>
+    <group id="n5_ae8w" name="n5" xy="283,25" size="154,102" advanced="true"/>
+    <graph id="n13_ae8w" name="bg2" xy="35,400" size="650,650" type="rect" lineColor="#00000000" fillColor="#ffb1a698">
+      <relation target="" sidePair=""/>
+    </graph>
+    <graph id="n21_cz03" name="touch" xy="35,400" size="650,650" type="rect" lineSize="0" lineColor="#00000000" fillColor="#00b1a698">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n24_lvk5" name="btnSetting" src="ae8w5" fileName="Button1.xml" xy="43,76" size="140,60" group="n23_ndks">
+      <Button title="设置" titleColor="#000000" titleFontSize="26"/>
+    </component>
+    <component id="n22_ndks" name="btnReStart" src="ae8w5" fileName="Button1.xml" xy="43,143" size="140,60" group="n23_ndks">
+      <Button title="重新开始" titleColor="#000000" titleFontSize="26"/>
+    </component>
+    <component id="n25_lvk5" name="btnRestore" src="ae8w5" fileName="Button1.xml" xy="43,210" size="140,60" group="n23_ndks">
+      <Button title="上一步" titleColor="#000000" titleFontSize="26"/>
+    </component>
+    <group id="n23_ndks" name="n23" xy="43,76" size="140,194" advanced="true" layout="vt" lineGap="7" excludeInvisibles="true">
+      <relation target="" sidePair=""/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="309,145">
+  <displayList>
+    <image id="n0_jaxm" name="n0" src="thmt7b" fileName="image/info_back.png" xy="0,1" size="309,144" aspect="true"/>
+    <loader id="n1_jaxm" name="loadIcon" xy="17,57" size="68,68" aspect="true" url="ui://5c7mak86qr75q" fill="scale" clearOnPublish="true"/>
+    <text id="n4_jaxm" name="txtPDef" xy="93,54" size="88,32" fontSize="22" vars="true" text="物防:{value=100}"/>
+    <text id="n5_jaxm" name="txtSDef" xy="93,97" size="88,32" fontSize="22" vars="true" text="魔防:{value=100}"/>
+    <text id="n6_jaxm" name="txtPAtk" xy="191,97" size="88,32" fontSize="22" vars="true" text="物攻:{value=100}"/>
+    <text id="n7_jaxm" name="txtSAtk" xy="191,54" size="88,32" fontSize="22" vars="true" text="魔攻:{value=100}"/>
+    <text id="n2_jaxm" name="txtName" xy="15,10" size="108,36" group="n8_iaj5" fontSize="26" color="#ffcc33" text="名字哈哈"/>
+    <text id="n3_jaxm" name="txtHp" xy="143,14" size="88,32" group="n8_iaj5" fontSize="22" vars="true" text="血量:{value=100}"/>
+    <group id="n8_iaj5" name="n8" xy="15,10" size="216,36" advanced="true" layout="hz" colGap="20" excludeInvisibles="true"/>
+  </displayList>
+</component>

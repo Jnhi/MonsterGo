@@ -1,0 +1,94 @@
+﻿[
+    {
+        "id": 0,
+        "name": "花园",
+        "monster": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "generateTime": 10,
+        "maxWalkStep": 60
+    },
+    {
+        "id": 1,
+        "name": "地牢",
+        "monster": [
+            4,
+            9,
+            5,
+            6
+        ],
+        "generateTime": 10,
+        "maxWalkStep": 60
+    },
+    {
+        "id": 2,
+        "name": "地下墓穴",
+        "monster": [
+            7,
+            8,
+            20,
+            10,
+            12
+        ],
+        "generateTime": 10,
+        "maxWalkStep": 60
+    },
+    {
+        "id": 3,
+        "name": "木桥",
+        "monster": [
+            11,
+            25,
+            35,
+            26,
+            21
+        ],
+        "generateTime": 10,
+        "maxWalkStep": 60
+    },
+    {
+        "id": 4,
+        "name": "废墟",
+        "monster": [
+            14,
+            15,
+            16,
+            22,
+            17,
+            23
+        ],
+        "generateTime": 10,
+        "maxWalkStep": 60
+    },
+    {
+        "id": 5,
+        "name": "城墙",
+        "monster": [
+            18,
+            19,
+            24,
+            27,
+            28,
+            29
+        ],
+        "generateTime": 10,
+        "maxWalkStep": 60
+    },
+    {
+        "id": 6,
+        "name": "教堂",
+        "monster": [
+            30,
+            32,
+            34,
+            35,
+            36,
+            37
+        ],
+        "generateTime": 10,
+        "maxWalkStep": 60
+    }
+]

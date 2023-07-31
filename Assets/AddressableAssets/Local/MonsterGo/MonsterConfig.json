@@ -1,0 +1,382 @@
+﻿[
+	{
+		"name": "蜘蛛",
+		"id": 0,
+		"hp": 1,
+		"att": 1,
+		"def": 0,
+		"satt": 0,
+		"sdef": 0,
+		"color": "#23282a"
+	},
+	{
+		"name": "蛇",
+		"id": 1,
+		"hp": 1,
+		"att": 0,
+		"def": 0,
+		"satt": 1,
+		"sdef": 0,
+		"color": "#a3ce27"
+	},
+	{
+		"name": "蝎子",
+		"id": 2,
+		"hp": 1,
+		"att": 0,
+		"def": 1,
+		"satt": 1,
+		"sdef": 0,
+		"color": "#f7e26b"
+	},
+	{
+		"name": "熊",
+		"id": 3,
+		"hp": 2,
+		"att": 2,
+		"def": 1,
+		"satt": 0,
+		"sdef": 0,
+		"color": "#7d4c23"
+	},
+	{
+		"name": "史莱姆",
+		"id": 4,
+		"hp": 3,
+		"att": 0,
+		"def": 1,
+		"satt": 3,
+		"sdef": 2,
+		"color": "#706ecb"
+	},
+	{
+		"name": "小鬼",
+		"id": 5,
+		"hp": 2,
+		"att": 2,
+		"def": 2,
+		"satt": 0,
+		"sdef": 1,
+		"color": "#d55b5b"
+	},
+	{
+		"name": "小妖精",
+		"id": 6,
+		"hp": 4,
+		"att": 2,
+		"def": 2,
+		"satt": 0,
+		"sdef": 0,
+		"color": "#3ee835"
+	},
+	{
+		"name": "骷髅人",
+		"id": 7,
+		"hp": 4,
+		"att": 2,
+		"def": 1,
+		"satt": 0,
+		"sdef": 1,
+		"color": "#ffffff"
+	},
+	{
+		"name": "兽人",
+		"id": 8,
+		"hp": 4,
+		"att": 2,
+		"def": 0,
+		"satt": 0,
+		"sdef": 4,
+		"color": "#a3ce27"
+	},
+	{
+		"name": "鬼魂",
+		"id": 9,
+		"hp": 4,
+		"att": 0,
+		"def": 3,
+		"satt": 4,
+		"sdef": 1,
+		"color": "#ffffff"
+	},
+	{
+		"name": "潜伏者",
+		"id": 10,
+		"hp": 6,
+		"att": 4,
+		"def": 4,
+		"satt": 0,
+		"sdef": 0,
+		"color": "#000000"
+	},
+	{
+		"name": "木乃伊",
+		"id": 11,
+		"hp": 6,
+		"att": 4,
+		"def": 2,
+		"satt": 0,
+		"sdef": 2,
+		"color": "#9d9d9d"
+	},
+	{
+		"name": "尖叫者",
+		"id": 12,
+		"hp": 6,
+		"att": 0,
+		"def": 3,
+		"satt": 4,
+		"sdef": 3,
+		"color": "#eb8931"
+	},
+	{
+		"name": "骨头武士",
+		"id": 13,
+		"hp": 8,
+		"att": 6,
+		"def": 6,
+		"satt": 0,
+		"sdef": 0,
+		"color": "#ffffff"
+	},
+	{
+		"name": "泥人",
+		"id": 14,
+		"hp": 12,
+		"att": 4,
+		"def": 8,
+		"satt": 0,
+		"sdef": 4,
+		"color": "#c48823"
+	},
+	{
+		"name": "巫师",
+		"id": 15,
+		"hp": 8,
+		"att": 0,
+		"def": 6,
+		"satt": 6,
+		"sdef": 6,
+		"color": "#be2633"
+	},
+	{
+		"name": "树人",
+		"id": 16,
+		"hp": 12,
+		"att": 6,
+		"def": 6,
+		"satt": 0,
+		"sdef": 2,
+		"color": "#582811"
+	},
+	{
+		"name": "恶魔",
+		"id": 17,
+		"hp": 10,
+		"att": 0,
+		"def": 8,
+		"satt": 10,
+		"sdef": 4,
+		"color": "#be2633"
+	},
+	{
+		"name": "地狱犬",
+		"id": 18,
+		"hp": 14,
+		"att": 0,
+		"def": 10,
+		"satt": 10,
+		"sdef": 5,
+		"color": "#c9b91c"
+	},
+	{
+		"name": "吸血鬼",
+		"id": 19,
+		"hp": 14,
+		"att": 0,
+		"def": 5,
+		"satt": 10,
+		"sdef": 10,
+		"color": "#cdf7f8"
+	},
+	{
+		"name": "大蛇",
+		"id": 20,
+		"hp": 4,
+		"att": 0,
+		"def": 10,
+		"satt": 3,
+		"sdef": 1,
+		"color": "#ae469c"
+	},
+	{
+		"name": "大蜘蛛",
+		"id": 21,
+		"hp": 8,
+		"att": 8,
+		"def": 8,
+		"satt": 0,
+		"sdef": 0,
+		"color": "#28cd28"
+	},
+	{
+		"name": "法老王",
+		"id": 22,
+		"hp": 10,
+		"att": 8,
+		"def": 10,
+		"satt": 0,
+		"sdef": 2,
+		"color": "#fff700"
+	},
+	{
+		"name": "火人",
+		"id": 23,
+		"hp": 10,
+		"att": 0,
+		"def": 10,
+		"satt": 10,
+		"sdef": 6,
+		"color": "#be2633"
+	},
+	{
+		"name": "观看者",
+		"id": 24,
+		"hp": 18,
+		"att": 0,
+		"def": 10,
+		"satt": 10,
+		"sdef": 10,
+		"color": "#be2633"
+	},
+	{
+		"name": "刺客",
+		"id": 25,
+		"hp": 8,
+		"att": 8,
+		"def": 0,
+		"satt": 0,
+		"sdef": 8,
+		"color": "#463169"
+	},
+	{
+		"name": "小鬼",
+		"id": 26,
+		"hp": 8,
+		"att": 8,
+		"def": 4,
+		"satt": 0,
+		"sdef": 4,
+		"color": "#be2633"
+	},
+	{
+		"name": "骨法师",
+		"id": 27,
+		"hp": 16,
+		"att": 0,
+		"def": 4,
+		"satt": 10,
+		"sdef": 10,
+		"color": "#843581"
+	},
+	{
+		"name": "熔岩傀儡",
+		"id": 28,
+		"hp": 20,
+		"att": 0,
+		"def": 10,
+		"satt": 12,
+		"sdef": 8,
+		"color": "#be2633"
+	},
+	{
+		"name": "夺心魔",
+		"id": 29,
+		"hp": 18,
+		"att": 0,
+		"def": 8,
+		"satt": 12,
+		"sdef": 8,
+		"color": "#e06f8b"
+	},
+	{
+		"name": "水晶弓箭手",
+		"id": 30,
+		"hp": 22,
+		"att": 12,
+		"def": 12,
+		"satt": 0,
+		"sdef": 6,
+		"color": "#ff4e4e"
+	},
+	{
+		"name": "水晶武士",
+		"id": 31,
+		"hp": 22,
+		"att": 12,
+		"def": 16,
+		"satt": 0,
+		"sdef": 2,
+		"color": "#ffa3fe"
+	},
+	{
+		"name": "水晶魔法师",
+		"id": 32,
+		"hp": 22,
+		"att": 0,
+		"def": 2,
+		"satt": 12,
+		"sdef": 16,
+		"color": "#b16eff"
+	},
+	{
+		"name": "水晶小偷",
+		"id": 33,
+		"hp": 22,
+		"att": 12,
+		"def": 9,
+		"satt": 0,
+		"sdef": 9,
+		"color": "#ffa3fe"
+	},
+	{
+		"name": "水晶圣骑士",
+		"id": 34,
+		"hp": 22,
+		"att": 0,
+		"def": 9,
+		"satt": 12,
+		"sdef": 9,
+		"color": "#cd9101"
+	},
+	{
+		"name": "水晶战士",
+		"id": 35,
+		"hp": 22,
+		"att": 12,
+		"def": 12,
+		"satt": 0,
+		"sdef": 12,
+		"color": "#01d4c2"
+	},
+	{
+		"name": "水晶龙",
+		"id": 36,
+		"hp": 25,
+		"att": 0,
+		"def": 10,
+		"satt": 15,
+		"sdef": 10,
+		"color": "#81ff76"
+	},
+	{
+		"name": "水晶傀儡",
+		"id": 37,
+		"hp": 25,
+		"att": 15,
+		"def": 10,
+		"satt": 0,
+		"sdef": 10,
+		"color": "#ffa3fe"
+	}
+]

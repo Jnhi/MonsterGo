@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280" bgColor="#666666">
+  <displayList>
+    <graph id="n88_xr8o" name="n88" xy="0,-210" size="720,1700" type="rect" fillColor="#b2666666">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <image id="n85_xr8o" name="n1" src="xr8o4q" fileName="image/prompt_back.png" xy="41,439" size="637,318" aspect="true"/>
+    <movieclip id="n86_xr8o" name="mcFail" src="xr8o4o" fileName="effect/fail.jta" xy="60,457" size="600,217" aspect="true" playing="false"/>
+    <movieclip id="n90_thmt" name="mcWin" src="thmt78" fileName="effect/win.jta" xy="60,457" size="600,218" aspect="true"/>
+    <text id="n87_xr8o" name="txtInfo" xy="134,700" size="452,39" font="ui://yled3jwothmto" fontSize="28" color="#ffffff" align="center" vAlign="middle" text="游戏结束，我们的城堡被勇者摧毁了">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n93_y5d2" name="btnReStart" src="y5d219" fileName="ui/button/btn_green.xml" pkg="yled3jwo" xy="260,799" size="200,66" aspect="true">
+      <Button title="重新开始" titleColor="#ffffff" titleFontSize="35"/>
+    </component>
+    <component id="n94_y5d2" name="btnExit" src="y5d218" fileName="ui/button/btn_red.xml" pkg="yled3jwo" xy="386,799" size="200,66" aspect="true" visible="false">
+      <Button title="回到主界面" titleColor="#ffffff" titleFontSize="35"/>
+    </component>
+  </displayList>
+</component>

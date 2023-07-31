@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="yled3jwo">
+  <resources>
+    <component id="dthm0" name="edge.xml" path="/ui/" exported="true"/>
+    <component id="qmkmk" name="emptyGroup.xml" path="/ui/" exported="true"/>
+    <font id="thmto" name="pixelFont.ttf" path="/" renderMode="" samplePointSize="16"/>
+    <image id="thmtx" name="btn_blue.PNG" path="/image/button/" smoothing="false"/>
+    <image id="thmty" name="btn_close.PNG" path="/image/button/" smoothing="false"/>
+    <image id="thmtz" name="btn_green.PNG" path="/image/button/" smoothing="false"/>
+    <image id="thmt10" name="btn_purple.PNG" path="/image/button/" smoothing="false"/>
+    <image id="thmt11" name="btn_quest.PNG" path="/image/button/" smoothing="false"/>
+    <image id="thmt12" name="btn_red.PNG" path="/image/button/" smoothing="false"/>
+    <component id="thmt13" name="btn_blue.xml" path="/ui/button/" exported="true"/>
+    <component id="thmt14" name="btn_quest.xml" path="/ui/button/" exported="true"/>
+    <component id="iaj515" name="btn_close.xml" path="/ui/button/" exported="true"/>
+    <component id="y5d218" name="btn_red.xml" path="/ui/button/" exported="true"/>
+    <component id="y5d219" name="btn_green.xml" path="/ui/button/" exported="true"/>
+    <sound id="ppsa1a" name="click.wav" path="/music/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

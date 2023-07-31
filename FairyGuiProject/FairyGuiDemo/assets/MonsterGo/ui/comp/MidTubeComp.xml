@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="663,185">
+  <displayList>
+    <graph id="n0_qmkm" name="bg3" xy="0,0" size="663,185" type="rect" lineSize="6" lineColor="#ff333333" fillColor="#ff797979">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n1_qmkm" name="n1" src="l8cm23" fileName="image/lich_lord.png" xy="22,107" size="66,67" aspect="true"/>
+    <movieclip id="n2_qmkm" name="movieCauldron" src="l8cm2l" fileName="effect/cauldron.jta" xy="99,119" size="54,56" aspect="true" playing="false"/>
+    <component id="n10_qmkm" name="tube1" src="qmkm37" fileName="Tube.xml" xy="168,7" scale="1.4,1.4"/>
+    <component id="n11_qmkm" name="tube2" src="qmkm37" fileName="Tube.xml" xy="253,7" scale="1.4,1.4"/>
+    <component id="n12_qmkm" name="tube3" src="qmkm37" fileName="Tube.xml" xy="338,7" scale="1.4,1.4"/>
+    <component id="n13_qmkm" name="tube4" src="qmkm37" fileName="Tube.xml" xy="423,7" scale="1.4,1.4"/>
+    <component id="n14_qmkm" name="tube5" src="qmkm37" fileName="Tube.xml" xy="508,7" scale="1.4,1.4"/>
+    <component id="n15_qmkm" name="tube6" src="qmkm37" fileName="Tube.xml" xy="593,7" scale="1.4,1.4"/>
+    <text id="n16_o09m" name="txtCombo" xy="44,28" size="89,79" font="ui://yled3jwothmto" fontSize="60" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" strokeSize="3" text="x2"/>
+  </displayList>
+</component>

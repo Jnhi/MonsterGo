@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="278,240">
+  <displayList>
+    <image id="n18_xr8o" name="n18" src="xr8o4n" fileName="image/map/spell_back.png" xy="0,0" size="278,239"/>
+    <image id="n17_xr8o" name="n17" src="xr8o48" fileName="image/map/map.png" xy="10,16" size="257,212" aspect="true"/>
+    <image id="n19_xr8o" name="red0" src="xr8o47" fileName="image/map/map_node.png" xy="70,181" group="n31_xr8o" scale="4,4"/>
+    <image id="n21_xr8o" name="red1" src="xr8o47" fileName="image/map/map_node.png" xy="186,174" group="n31_xr8o" scale="4,4"/>
+    <image id="n22_xr8o" name="red2" src="xr8o47" fileName="image/map/map_node.png" xy="188,134" group="n31_xr8o" scale="4,4"/>
+    <image id="n23_xr8o" name="red3" src="xr8o47" fileName="image/map/map_node.png" xy="100,126" group="n31_xr8o" scale="4,4"/>
+    <image id="n24_xr8o" name="red4" src="xr8o47" fileName="image/map/map_node.png" xy="34,134" group="n31_xr8o" scale="4,4"/>
+    <image id="n30_xr8o" name="red5" src="xr8o47" fileName="image/map/map_node.png" xy="64,52" group="n31_xr8o" scale="4,4"/>
+    <image id="n25_xr8o" name="red6" src="xr8o47" fileName="image/map/map_node.png" xy="17,27" group="n31_xr8o" scale="4,4"/>
+    <group id="n31_xr8o" name="n31" xy="17,27" size="175,158"/>
+    <image id="n32_xr8o" name="line0" src="xr8o46" fileName="image/map/map_path_0.png" xy="11,17" group="n38_xr8o" scale="4.4,4.4"/>
+    <image id="n33_xr8o" name="line1" src="xr8o4s" fileName="image/map/map_path_1.png" xy="9,13" group="n38_xr8o" scale="4.4,4.4"/>
+    <image id="n34_xr8o" name="line2" src="xr8o4t" fileName="image/map/map_path_2.png" xy="9,16" group="n38_xr8o" scale="4.4,4.4"/>
+    <image id="n35_xr8o" name="line3" src="xr8o45" fileName="image/map/map_path_3.png" xy="8,16" group="n38_xr8o" scale="4.4,4.4"/>
+    <image id="n36_xr8o" name="line4" src="xr8o44" fileName="image/map/map_path_4.png" xy="8,14" group="n38_xr8o" scale="4.4,4.4"/>
+    <image id="n37_xr8o" name="line5" src="xr8o4c" fileName="image/map/map_path_5.png" xy="13,14" group="n38_xr8o" scale="4.4,4.4"/>
+    <group id="n38_xr8o" name="n38" xy="8,13" size="63,52"/>
+  </displayList>
+</component>

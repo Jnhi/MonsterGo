@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280">
+  <displayList>
+    <image id="n46_l8cm" name="bg" src="l8cm2m" fileName="image/background.png" xy="0,1490" pivot="0,1" anchor="true" size="720,1700">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <graph id="n89_thmt" name="bg1" xy="8,334" size="703,953" group="n98_ppsa" type="rect" lineSize="6" lineColor="#ffa4a4a4" fillColor="#ff797979">
+      <relation target="" sidePair=""/>
+    </graph>
+    <graph id="n93_thmt" name="bg4" xy="0,96" size="720,249" group="n98_ppsa" type="rect" lineSize="6" lineColor="#ff333333" fillColor="#ff797979">
+      <relation target="" sidePair=""/>
+    </graph>
+    <component id="n87_xr8o" name="TopMapComp" src="xr8o4r" fileName="ui/comp/MapComp.xml" xy="447,102" group="n98_ppsa" scale="0.954,0.989"/>
+    <component id="n74_l8cm" name="topMap" src="l8cm33" fileName="ui/comp/TopBattleComp.xml" xy="6,102" size="440,236" group="n98_ppsa"/>
+    <component id="n75_qmkm" name="midTube" src="qmkm36" fileName="ui/comp/MidTubeComp.xml" xy="28,345" size="663,185" group="n98_ppsa"/>
+    <graph id="n13_ae8w" name="bg2" xy="35,524" size="650,650" group="n57_l8cm" type="rect" lineSize="0" lineColor="#ffa4a4a4" fillColor="#ff333333">
+      <relation target="" sidePair=""/>
+    </graph>
+    <component id="n76_qmkm" name="gEmpty" src="qmkmk" fileName="ui/emptyGroup.xml" pkg="yled3jwo" xy="35,528" size="650,647" group="n57_l8cm" touchable="false"/>
+    <component id="n77_qmkm" name="gBlock" src="qmkmk" fileName="ui/emptyGroup.xml" pkg="yled3jwo" xy="35,528" size="650,647" group="n57_l8cm"/>
+    <graph id="n90_thmt" name="bg3" xy="26,1169" size="667,109" group="n57_l8cm" type="rect" lineSize="6" lineColor="#ffa4a4a4" fillColor="#ff797979">
+      <relation target="" sidePair=""/>
+    </graph>
+    <component id="n51_l8cm" name="prgBlockDown" src="l8cm2r" fileName="ui/comp/prg_refill.xml" xy="320,1180" pivot="0.5,0" group="n57_l8cm" scale="8,8">
+      <ProgressBar value="73" max="100"/>
+    </component>
+    <group id="n57_l8cm" name="gDown" xy="26,524" size="667,754" group="n98_ppsa" advanced="true">
+      <relation target="" sidePair=""/>
+    </group>
+    <image id="n71_l8cm" name="n71" src="l8cm32" fileName="image/score_back.png" xy="180,18" size="359,71" group="n84_md2s" aspect="true"/>
+    <text id="n82_md2s" name="txtScore" xy="182,22" size="336,65" group="n84_md2s" fontSize="40" color="#ffff00" align="right" vAlign="middle" leading="1" letterSpacing="28" autoSize="none" strokeColor="#a99047" strokeSize="3" text="9999999"/>
+    <group id="n84_md2s" name="n84" xy="180,18" size="359,71" group="n98_ppsa"/>
+    <component id="n96_thmt" name="btnIllustrate" src="thmt13" fileName="ui/button/btn_blue.xml" pkg="yled3jwo" xy="59,30" size="113,47" group="n98_ppsa" aspect="true">
+      <Button title="图鉴" titleColor="#ffffff" titleFontSize="37"/>
+    </component>
+    <component id="n97_thmt" name="btnRule" src="thmt14" fileName="ui/button/btn_quest.xml" pkg="yled3jwo" xy="9,29" size="42,50" group="n98_ppsa" aspect="true"/>
+    <group id="n98_ppsa" name="n98" xy="0,18" size="725,1269" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

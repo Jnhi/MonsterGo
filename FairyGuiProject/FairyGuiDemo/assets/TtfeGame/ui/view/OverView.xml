@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280">
+  <displayList>
+    <graph id="n0_ae8w" name="bg" xy="20,260" size="680,550" type="rect" lineColor="#00000000" fillColor="#ffcccccc" corner="60">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2_ae8w" name="n2" xy="283,448" size="154,102" group="n5_ae8w" type="rect" lineColor="#00000000" fillColor="#ffb2a69a" corner="15"/>
+    <text id="n4_ae8w" name="n4" xy="288,453" size="144,54" group="n5_ae8w" fontSize="40" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" text="总得分"/>
+    <text id="n6_ae8w" name="txtScore" xy="288,495" size="144,54" group="n5_ae8w" fontSize="40" color="#f1efed" align="center" vAlign="middle" autoSize="none" bold="true" text="0"/>
+    <group id="n5_ae8w" name="n5" xy="283,448" size="154,102" advanced="true"/>
+    <component id="n15_ae8w" name="btnRebirth" src="ae8w5" fileName="Button1.xml" xy="246,586" size="228,83" visible="false">
+      <Button title="复活" titleColor="#ffffff" titleFontSize="54"/>
+    </component>
+    <component id="n22_ndks" name="btnReStart" src="ae8w5" fileName="Button1.xml" xy="222,612" size="274,104">
+      <Button title="重新开始" titleColor="#ffffff" titleFontSize="60"/>
+    </component>
+    <component id="n26_lvk5" name="btnClose" src="ae8w5" fileName="Button1.xml" xy="601,281" size="74,35">
+      <Button title="关闭" titleColor="#ffffff" titleFontSize="26"/>
+    </component>
+    <text id="n24_ndks" name="n24" xy="228,325" size="260,84" fontSize="64" bold="true" text="游戏结束"/>
+  </displayList>
+</component>

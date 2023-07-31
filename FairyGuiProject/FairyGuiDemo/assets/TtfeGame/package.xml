@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ya2zs2a0">
+  <resources>
+    <component id="ae8w0" name="MainView.xml" path="/ui/view/" exported="true"/>
+    <component id="ae8w2" name="Grid.xml" path="/ui/comp/" exported="true"/>
+    <component id="ae8w4" name="Num.xml" path="/ui/comp/" exported="true"/>
+    <component id="ae8w5" name="Button1.xml" path="/ui/comp/"/>
+    <component id="ndks6" name="SetView.xml" path="/ui/view/" exported="true"/>
+    <component id="lvk58" name="OverView.xml" path="/ui/view/" exported="true"/>
+    <component id="lvk5a" name="Slider1_grip.xml" path="/ui/comp/"/>
+    <component id="lvk5b" name="Slider1.xml" path="/ui/comp/"/>
+    <component id="lvk5c" name="Button2.xml" path="/ui/comp/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

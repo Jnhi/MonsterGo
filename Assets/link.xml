@@ -1,0 +1,5 @@
+<linker>
+  <assembly fullname="TopMapComp" preserve="all"/>
+  <assembly fullname="TopBattleComp" preserve="all"/>
+  <assembly fullname="MidTubeComp" preserve="all"/>
+</linker>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,264">
+  <displayList>
+    <image id="n0_jaxm" name="n0" src="thmt7b" fileName="image/info_back.png" xy="-2,1" size="600,264" aspect="true"/>
+    <loader id="n1_jaxm" name="loadIcon" xy="24,108" size="193,93" url="ui://5c7mak86kh3635" fill="scaleFree" clearOnPublish="true"/>
+    <text id="n2_jaxm" name="txtName" xy="218,30" size="166,54" fontSize="40" bold="true" text="地图名字"/>
+  </displayList>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="150,150" pivot="0.5,0.5" bgColor="#eae1d8">
+  <displayList>
+    <graph id="n4_ae8w" name="n4" xy="0,0" size="150,150" type="rect" lineColor="#00000000" fillColor="#ffeae1d8">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3_ae8w" name="txtNum" xy="0,43" size="150,64" fontSize="48" align="center" vAlign="middle" autoSize="shrink" bold="true" text="2048000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

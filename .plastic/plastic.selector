@@ -1,0 +1,4 @@
+repository "mygame@jnhi@cloud.cn"
+  path "/"
+    smartbranch "/main" 
+     

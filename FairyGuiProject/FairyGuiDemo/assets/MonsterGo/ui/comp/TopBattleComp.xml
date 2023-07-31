@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="440,240" overflow="hidden">
+  <displayList>
+    <graph id="n4_kh36" name="bg4" xy="0,0" size="440,240" type="rect" lineSize="0" lineColor="#00575757" fillColor="#ff797979">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n5_kh36" name="prgBattle" src="l8cm2t" fileName="sld_heroe.xml" xy="220,183" pivot="0.5,0" anchor="true" scale="5,5">
+      <Slider value="43" max="100"/>
+    </component>
+    <text id="n9_a0cx" name="txtMapName" xy="43,125" size="353,58" font="ui://yled3jwothmto" fontSize="43" color="#ffffff" align="center" vAlign="middle" letterSpacing="10" autoSize="none" strokeColor="#000000" strokeSize="4" text="地牢"/>
+    <list id="n10_bw90" name="monsterList" xy="0,0" size="440,20" layout="row" overflow="scroll" scroll="horizontal" colGap="4" defaultItem="ui://5c7mak86bw9042" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <loader id="n8_kh36" name="loadBg1" xy="575,23" pivot="1,0" anchor="true" size="1530,102" group="n34_iaj5" url="ui://5c7mak86kh3635" fill="scaleMatchHeight"/>
+    <loader id="n0_l8cm" name="loadBg2" xy="-955,23" pivot="1,0" anchor="true" size="1530,102" group="n34_iaj5" url="ui://5c7mak86kh3635" fill="scaleNoBorder"/>
+    <group id="n34_iaj5" name="gMap" xy="-2485,23" size="3060,102" advanced="true"/>
+    <text id="n17_o09m" name="txtMHP" xy="29,173" size="92,34" group="n19_o09m" font="ui://yled3jwothmto" fontSize="24" text="HP：100"/>
+    <text id="n18_o09m" name="txtMATK" xy="29,212" size="110,34" group="n19_o09m" font="ui://yled3jwothmto" fontSize="24" text="ATK：100"/>
+    <group id="n19_o09m" name="gMonsterInfo" xy="29,173" size="110,73" group="n23_o09m" advanced="true" layout="vt" lineGap="5" excludeInvisibles="true"/>
+    <text id="n20_o09m" name="txtHHP" xy="243,173" size="94,29" group="n31_paqp" font="ui://yled3jwothmto" fontSize="20" text="血量：100"/>
+    <text id="n30_paqp" name="txtHDef" xy="243,202" size="94,29" group="n31_paqp" font="ui://yled3jwothmto" fontSize="20" text="物防：100"/>
+    <group id="n31_paqp" name="n31" xy="243,173" size="94,58" group="n22_o09m" advanced="true" layout="vt" excludeInvisibles="true"/>
+    <text id="n21_o09m" name="txtHATK" xy="337,173" size="94,29" group="n33_paqp" font="ui://yled3jwothmto" fontSize="20" text="物攻：100"/>
+    <text id="n32_paqp" name="txtHSATK" xy="337,202" size="94,29" group="n33_paqp" font="ui://yled3jwothmto" fontSize="20" text="魔攻：100"/>
+    <group id="n33_paqp" name="n33" xy="337,173" size="94,58" group="n22_o09m" advanced="true" layout="vt" excludeInvisibles="true"/>
+    <group id="n22_o09m" name="gHeroInfo" xy="243,173" size="188,58" group="n23_o09m" advanced="true" layout="hz" excludeInvisibles="true"/>
+    <group id="n23_o09m" name="gBattleInfo" xy="29,173" size="402,73" advanced="true"/>
+    <loader id="n2_l8cm" name="loadMonster" xy="175,89" pivot="0.5,0.5" anchor="true" size="50,50" group="n12_hq8v" aspect="true" url="ui://5c7mak86qr75r" fill="scale"/>
+    <loader id="n14_hq8v" name="loadMonsterAtkEffect" xy="150,64" size="50,50" group="n12_hq8v" aspect="true" url="ui://5c7mak867lt95s" align="center" vAlign="middle" fill="scaleMatchHeight" clearOnPublish="true"/>
+    <group id="n12_hq8v" name="gMonster" xy="150,64" size="50,50" advanced="true"/>
+    <loader id="n1_l8cm" name="loadHero" xy="265,89" pivot="0.5,0.5" anchor="true" size="50,50" group="n15_hq8v" aspect="true" skew="0,-180" url="ui://5c7mak86l8cm21" fill="scale"/>
+    <loader id="n16_hq8v" name="loadHeroAtkEffect" xy="240,64" size="50,50" group="n15_hq8v" aspect="true" vAlign="middle" fill="scaleMatchHeight" clearOnPublish="true"/>
+    <group id="n15_hq8v" name="gHero" xy="240,64" size="50,50" advanced="true"/>
+    <text id="n24_dofe" name="txtHeroNum" xy="374,78" size="69,52" font="ui://yled3jwothmto" fontSize="38" color="#ffffff" align="right" vAlign="bottom" leading="0" autoSize="none" strokeColor="#000000" strokeSize="4" text="x20"/>
+    <text id="n26_dofe" name="txtMonsterDmg" xy="160,38" size="50,54" group="n28_dofe" font="ui://yled3jwothmto" fontSize="40" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" strokeSize="4" text="2"/>
+    <text id="n27_dofe" name="txtHeroDmg" xy="230,38" size="50,54" group="n28_dofe" font="ui://yled3jwothmto" fontSize="40" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" strokeSize="4" text="2"/>
+    <group id="n28_dofe" name="gDmgText" xy="160,38" size="120,54"/>
+  </displayList>
+</component>

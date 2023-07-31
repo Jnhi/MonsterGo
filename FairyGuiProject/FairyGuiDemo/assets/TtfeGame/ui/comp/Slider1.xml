@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,10" extention="Slider">
+  <displayList>
+    <graph id="n0_lvk5" name="n0" xy="0,0" size="50,10" type="rect" lineColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_lvk5" name="bar" xy="5,3" size="40,4" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n2_lvk5" name="title" xy="0,-41" size="50,48" fontSize="30" align="center" autoSize="none" bold="true" text="11111">
+      <relation target="" sidePair="width-width"/>
+    </text>
+    <component id="n3_lvk5" name="grip" src="lvk5a" fileName="Slider1_grip.xml" xy="35,-4">
+      <relation target="n1_lvk5" sidePair="right-right"/>
+      <relation target="" sidePair="height-height"/>
+    </component>
+  </displayList>
+  <Slider titleType="value"/>
+</component>

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Local_Common
+  m_EditorClassIdentifier: 
+  m_GroupName: Local_Common
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 94b368fb7c2e94cfb928eb9aa6f0de7f
+  m_SerializeEntries:
+  - m_GUID: eddaac4a4ec6c43b0a9515157a7c4b3d
+    m_Address: Common/Common_fui.bytes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 529b617a0918d704b9073a0cd8873340
+    m_Address: Common/Common_atlas0.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: be1d1d3518629844d95967e418022a6a
+    m_Address: Common/Common_ppsa1a.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b60be8c32f5b6ca48b6588ce238e4d0b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ab3757b15ead81148a4a28c021f73611, type: 2}
+    - {fileID: 11400000, guid: e74e8c79f48bf62479baab3b1a78a920, type: 2}

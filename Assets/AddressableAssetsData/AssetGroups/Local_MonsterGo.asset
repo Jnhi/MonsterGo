@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Local_MonsterGo
+  m_EditorClassIdentifier: 
+  m_GroupName: Local_MonsterGo
+  m_Data:
+    m_SerializedData: []
+  m_GUID: caaa9539e599a874881795c4b35e5d32
+  m_SerializeEntries:
+  - m_GUID: 7a15f42f101a68848993c4944d8d65c8
+    m_Address: MonsterGo/MonsterGo_fui.bytes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b015edbb490da42d58d8873c084ad7c1
+    m_Address: MonsterGo/LevelConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 41741a16c2e7c4abda1cf75180ac1f6d
+    m_Address: MonsterGo/HeroConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: efbbd9a6552fc453c99df27dbdf20531
+    m_Address: MonsterGo/MonsterConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9f555a001518044458cddd7fde4ae514
+    m_Address: MonsterGo/MonsterGo_atlas0.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ee903140a8d654fd1be5feab3eee52e4
+    m_Address: MonsterGo/music/block.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4cda1d28fc60e41a8be3194940f594d4
+    m_Address: MonsterGo/music/damage.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9285cfef8a478634299c40836651326b
+    m_Address: MonsterGo/music/gameloop.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a2af9aa2b0e16f249b2c49238b2add07
+    m_Address: MonsterGo/music/death.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a35c813a73aca584aa3722d262319812
+    m_Address: MonsterGo/music/drop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e34f6142f2885034694b1a3f7b0038f7
+    m_Address: MonsterGo/music/match.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 01bef8642e0bc7649910920f10bc88de
+    m_Address: MonsterGo/music/spawn.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2afc034b891337e4bb7a261b313778bf
+    m_Address: MonsterGo/music/swap.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 85979a956818ceb40bf02626b20a85fc
+    m_Address: MonsterGo/music/title.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b94e19a14d5d9574cbdfda808354f215
+    m_Address: MonsterGo/music/click.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b60be8c32f5b6ca48b6588ce238e4d0b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 943dbacffc4741743a1168f930db394d, type: 2}
+    - {fileID: 11400000, guid: 02490b643256f8c41b25a6a4d21e8183, type: 2}

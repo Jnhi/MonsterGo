@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="40,120">
+  <displayList>
+    <component id="n0_qmkm" name="sld" src="l8cm30" fileName="ui/comp/sld_tube.xml" xy="0,40" size="8,16" scale="5,5">
+      <relation target="" sidePair=""/>
+      <Slider value="50" max="100"/>
+    </component>
+    <loader id="n1_qmkm" name="icon" xy="3,4" size="34,34" aspect="true" fill="scale" clearOnPublish="true">
+      <relation target="" sidePair=""/>
+    </loader>
+    <movieclip id="n2_a0cx" name="movieSpawn" src="a0cx41" fileName="effect/spawn.jta" xy="0,0" size="40,40" aspect="true" visible="false" playing="false"/>
+  </displayList>
+</component>

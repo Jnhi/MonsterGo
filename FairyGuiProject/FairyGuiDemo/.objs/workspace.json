@@ -1,0 +1,43 @@
+{
+  "libview.firstColumnWidth": 565,
+  "expanded_nodes": [
+    "9381c3rt",
+    "/",
+    "26z69swc",
+    "/"
+  ],
+  "libview.iconScale": 0,
+  "doc.openedDocs": [
+    "ui://5c7mak86jaxm7c",
+    "ui://5c7mak86xr8o4p",
+    "ui://7unjwcn6y5d20",
+    "ui://yled3jwoy5d219",
+    "ui://5c7mak86l8cm33",
+    "ui://5c7mak86jaxm7e",
+    "ui://5c7mak86qr750",
+    "ui://5c7mak86xr8o4r",
+    "ui://5c7mak86jaxm7f",
+    "ui://yled3jwothmt13"
+  ],
+  "auxline1": true,
+  "canvasColor": 10066329,
+  "auxline2": true,
+  "doc.activeDoc": "ui://7unjwcn6y5d20",
+  "libview.twoColumn": false,
+  "libview.expandedNodes": [
+    "yled3jwo",
+    "/",
+    "yled3jwo",
+    "/comp/",
+    "yled3jwo",
+    "/comp/button/",
+    "7unjwcn6",
+    "/"
+  ],
+  "snapToGrid": true,
+  "backgroundColor": 6710886,
+  "libview.currentGroup": "",
+  "hidden_packages": [],
+  "gridSize": 30,
+  "gridColor": 80
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="64,64" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <loader id="n0_qr75" name="icon" xy="0,0" size="64,64" url="ui://5c7mak86qr752" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n1_l8cm" name="imgSelect" src="l8cm24" fileName="image/selected.png" xy="0,0" size="64,64"/>
+    <movieclip id="n2_da1q" name="anim" src="qr751i" fileName="effect/pop.jta" xy="0,0" size="64,64" visible="false" playing="false"/>
+  </displayList>
+</component>

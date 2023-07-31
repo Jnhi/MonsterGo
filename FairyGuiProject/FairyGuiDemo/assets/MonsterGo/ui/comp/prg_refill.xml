@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,10" extention="ProgressBar">
+  <displayList>
+    <image id="n0_l8cm" name="n0" src="l8cm2o" fileName="image/refill_empty.png" xy="0,0" size="80,10">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_thmt" name="bar" src="l8cm2p" fileName="image/refill_fill.png" xy="1,1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar/>
+</component>

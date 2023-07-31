@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,10" extention="Slider" bgColor="#990000">
+  <displayList>
+    <image id="n0_l8cm" name="n0" src="l8cm2o" fileName="image/refill_empty.png" xy="0,2" size="80,6">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4_paqp" name="n4" src="paqp6u" fileName="image/img_door.PNG" xy="0,-1" size="10,10"/>
+    <graph id="n3_a0cx" name="bar" xy="5,2" size="71,6" type="rect" lineColor="#00000000" fillColor="#00990000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n2_l8cm" name="grip" src="l8cm2s" fileName="sld_heroe_grip.xml" xy="0,0">
+      <relation target="" sidePair=""/>
+      <relation target="n3_a0cx" sidePair="left-left"/>
+    </component>
+  </displayList>
+  <Slider reverse="true" changeOnClick="false"/>
+</component>

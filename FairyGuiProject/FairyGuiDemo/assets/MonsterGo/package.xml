@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="5c7mak86">
+  <resources>
+    <component id="qr750" name="MainView.xml" path="/ui/view/" exported="true"/>
+    <image id="qr752" name="monsters_0.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr753" name="monsters_31.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr754" name="monsters_32.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr755" name="monsters_33.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr756" name="monsters_34.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr757" name="monsters_35.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr758" name="monsters_36.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr759" name="monsters_37.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75a" name="monsters_38.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75b" name="monsters_39.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75c" name="monsters_4.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75d" name="monsters_40.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75e" name="monsters_41.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75f" name="monsters_42.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75g" name="monsters_43.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75h" name="monsters_44.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75i" name="monsters_45.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75j" name="monsters_5.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75k" name="monsters_6.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75l" name="monsters_7.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75m" name="monsters_30.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75n" name="monsters_3.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75o" name="monsters_29.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75p" name="monsters_28.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75q" name="monsters_1.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75r" name="monsters_10.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75s" name="monsters_11.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75t" name="monsters_12.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75u" name="monsters_13.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75v" name="monsters_14.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75w" name="monsters_15.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75x" name="monsters_16.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75y" name="monsters_17.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr75z" name="monsters_8.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7510" name="monsters_18.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7511" name="monsters_2.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7512" name="monsters_20.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7513" name="monsters_21.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7514" name="monsters_22.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7515" name="monsters_23.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7516" name="monsters_24.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7517" name="monsters_25.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7518" name="monsters_26.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr7519" name="monsters_27.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr751a" name="monsters_19.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <image id="qr751b" name="monsters_9.PNG" path="/image/monster/" exported="true" smoothing="false"/>
+    <component id="qr751c" name="Block.xml" path="/ui/comp/" exported="true"/>
+    <image id="qr751d" name="pop_0.PNG" path="/image/effect/pop/" smoothing="false"/>
+    <image id="qr751e" name="pop_1.PNG" path="/image/effect/pop/" smoothing="false"/>
+    <image id="qr751f" name="pop_2.PNG" path="/image/effect/pop/" smoothing="false"/>
+    <image id="qr751g" name="pop_3.PNG" path="/image/effect/pop/" smoothing="false"/>
+    <image id="qr751h" name="pop_4.PNG" path="/image/effect/pop/" smoothing="false"/>
+    <movieclip id="qr751i" name="pop.jta" path="/effect/" smoothing="false"/>
+    <image id="l8cm1j" name="grid_back.png" path="/image/" scale9grid="2,2,4,4" smoothing="false" duplicatePadding="true"/>
+    <image id="l8cm1k" name="heroes_11.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1l" name="heroes_12.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1m" name="heroes_13.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1n" name="heroes_14.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1o" name="heroes_15.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1p" name="heroes_16.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1q" name="heroes_17.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1r" name="heroes_18.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1s" name="heroes_19.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1t" name="heroes_2.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1u" name="heroes_3.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1v" name="heroes_4.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1w" name="heroes_5.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1x" name="heroes_6.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1y" name="heroes_7.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm1z" name="heroes_10.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm20" name="heroes_1.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm21" name="heroes_0.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm22" name="environments_6.PNG" path="/image/environments/" exported="true" smoothing="false" disableTrim="true"/>
+    <image id="l8cm23" name="lich_lord.png" path="/image/" scale9grid="2,2,4,4" smoothing="false" disableTrim="true"/>
+    <image id="l8cm24" name="selected.png" path="/image/" smoothing="false"/>
+    <image id="l8cm25" name="selecting.png" path="/image/" smoothing="false"/>
+    <image id="l8cm26" name="tube.png" path="/image/" scale9grid="1,7,5,2" smoothing="false"/>
+    <image id="l8cm27" name="cauldron_0.PNG" path="/image/effect/cauldron/" smoothing="false"/>
+    <image id="l8cm28" name="cauldron_1.PNG" path="/image/effect/cauldron/" smoothing="false"/>
+    <image id="l8cm29" name="cauldron_2.PNG" path="/image/effect/cauldron/" smoothing="false"/>
+    <image id="l8cm2a" name="heroes_8.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <image id="l8cm2b" name="cauldron_3.PNG" path="/image/effect/cauldron/" smoothing="false"/>
+    <image id="l8cm2c" name="cauldron_5.PNG" path="/image/effect/cauldron/" smoothing="false"/>
+    <image id="l8cm2e" name="environments_1.PNG" path="/image/environments/" exported="true" smoothing="false" disableTrim="true"/>
+    <image id="l8cm2f" name="environments_2.PNG" path="/image/environments/" exported="true" smoothing="false" disableTrim="true"/>
+    <image id="l8cm2g" name="environments_3.PNG" path="/image/environments/" exported="true" smoothing="false" disableTrim="true"/>
+    <image id="l8cm2h" name="environments_4.PNG" path="/image/environments/" exported="true" smoothing="false" disableTrim="true"/>
+    <image id="l8cm2i" name="environments_5.PNG" path="/image/environments/" exported="true" smoothing="false" disableTrim="true"/>
+    <image id="l8cm2j" name="cauldron_4.PNG" path="/image/effect/cauldron/" smoothing="false"/>
+    <image id="l8cm2k" name="heroes_9.PNG" path="/image/heroes/" exported="true" smoothing="false"/>
+    <movieclip id="l8cm2l" name="cauldron.jta" path="/effect/" smoothing="false"/>
+    <image id="l8cm2m" name="background.png" path="/image/" smoothing="false"/>
+    <image id="l8cm2n" name="party_indicator.png" path="/image/" smoothing="false" disableTrim="true"/>
+    <image id="l8cm2o" name="refill_empty.png" path="/image/" scale9grid="19,3,40,3" smoothing="false"/>
+    <image id="l8cm2p" name="refill_fill.png" path="/image/" scale="tile" scale9grid="19,2,40,3" smoothing="false"/>
+    <component id="l8cm2r" name="prg_refill.xml" path="/ui/comp/"/>
+    <component id="l8cm2s" name="sld_heroe_grip.xml" path="/ui/comp/"/>
+    <component id="l8cm2t" name="sld_heroe.xml" path="/ui/comp/"/>
+    <component id="l8cm2u" name="Grid.xml" path="/ui/comp/" exported="true"/>
+    <component id="l8cm30" name="sld_tube.xml" path="/ui/comp/"/>
+    <image id="l8cm32" name="score_back.png" path="/image/" smoothing="false"/>
+    <component id="l8cm33" name="TopBattleComp.xml" path="/ui/comp/"/>
+    <image id="kh3635" name="environments_0.PNG" path="/image/environments/" exported="true" smoothing="false" disableTrim="true"/>
+    <component id="qmkm36" name="MidTubeComp.xml" path="/ui/comp/"/>
+    <component id="qmkm37" name="Tube.xml" path="/ui/comp/"/>
+    <image id="a0cx3p" name="spawn_0.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3q" name="spawn_1.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3s" name="spawn_2.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3t" name="spawn_3.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3u" name="spawn_4.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3v" name="spawn_5.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3w" name="spawn_6.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3x" name="spawn_7.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3y" name="spawn_8.PNG" path="/image/effect/spawn/"/>
+    <image id="a0cx3z" name="spawn_9.PNG" path="/image/effect/spawn/"/>
+    <movieclip id="a0cx41" name="spawn.jta" path="/effect/" smoothing="false"/>
+    <component id="bw9042" name="MonsterIcon.xml" path="/ui/comp/"/>
+    <image id="xr8o43" name="game_over_scene_0.PNG" path="/image/effect/fail/"/>
+    <image id="xr8o44" name="map_path_4.png" path="/image/map/" smoothing="false"/>
+    <image id="xr8o45" name="map_path_3.png" path="/image/map/" smoothing="false"/>
+    <image id="xr8o46" name="map_path_0.png" path="/image/map/" smoothing="false"/>
+    <image id="xr8o47" name="map_node.png" path="/image/map/" smoothing="false"/>
+    <image id="xr8o48" name="map.png" path="/image/map/" smoothing="false"/>
+    <image id="xr8o49" name="victory_scene_6.PNG" path="/image/effect/win/"/>
+    <image id="xr8o4a" name="victory_scene_5.PNG" path="/image/effect/win/"/>
+    <image id="xr8o4b" name="victory_scene_4.PNG" path="/image/effect/win/"/>
+    <image id="xr8o4c" name="map_path_5.png" path="/image/map/" smoothing="false"/>
+    <image id="xr8o4d" name="victory_scene_3.PNG" path="/image/effect/win/"/>
+    <image id="xr8o4e" name="victory_scene_1.PNG" path="/image/effect/win/"/>
+    <image id="xr8o4f" name="victory_scene_0.PNG" path="/image/effect/win/"/>
+    <image id="xr8o4g" name="game_over_scene_6.PNG" path="/image/effect/fail/"/>
+    <image id="xr8o4h" name="game_over_scene_5.PNG" path="/image/effect/fail/"/>
+    <image id="xr8o4i" name="game_over_scene_4.PNG" path="/image/effect/fail/"/>
+    <image id="xr8o4j" name="game_over_scene_3.PNG" path="/image/effect/fail/"/>
+    <image id="xr8o4k" name="game_over_scene_2.PNG" path="/image/effect/fail/"/>
+    <image id="xr8o4l" name="game_over_scene_1.PNG" path="/image/effect/fail/"/>
+    <image id="xr8o4m" name="victory_scene_2.PNG" path="/image/effect/win/"/>
+    <image id="xr8o4n" name="spell_back.png" path="/image/map/" smoothing="false"/>
+    <movieclip id="xr8o4o" name="fail.jta" path="/effect/" smoothing="false"/>
+    <component id="xr8o4p" name="GameOverView.xml" path="/ui/view/" exported="true"/>
+    <image id="xr8o4q" name="prompt_back.png" path="/image/" scale="9grid" scale9grid="24,12,48,24"/>
+    <component id="xr8o4r" name="MapComp.xml" path="/ui/comp/"/>
+    <image id="xr8o4s" name="map_path_1.png" path="/image/map/" smoothing="false"/>
+    <image id="xr8o4t" name="map_path_2.png" path="/image/map/" smoothing="false"/>
+    <image id="7lt95g" name="1.PNG" path="/image/effect/pAttack/"/>
+    <image id="7lt95h" name="2.PNG" path="/image/effect/pAttack/"/>
+    <image id="7lt95i" name="3.PNG" path="/image/effect/pAttack/"/>
+    <image id="7lt95j" name="1.PNG" path="/image/effect/pDefend/"/>
+    <image id="7lt95k" name="2.PNG" path="/image/effect/pDefend/"/>
+    <image id="7lt95l" name="3.PNG" path="/image/effect/pDefend/"/>
+    <image id="7lt95m" name="1.PNG" path="/image/effect/sAttack/"/>
+    <image id="7lt95n" name="2.PNG" path="/image/effect/sAttack/"/>
+    <image id="7lt95o" name="3.PNG" path="/image/effect/sAttack/"/>
+    <image id="7lt95p" name="1.PNG" path="/image/effect/sDefend/"/>
+    <image id="7lt95q" name="2.PNG" path="/image/effect/sDefend/"/>
+    <image id="7lt95r" name="3.PNG" path="/image/effect/sDefend/"/>
+    <movieclip id="7lt95s" name="pAttack.jta" path="/effect/" exported="true" smoothing="false"/>
+    <movieclip id="7lt95t" name="pDefend.jta" path="/effect/" exported="true" smoothing="false"/>
+    <movieclip id="7lt95u" name="sAttack.jta" path="/effect/" exported="true" smoothing="false"/>
+    <movieclip id="7lt95v" name="sDefend.jta" path="/effect/" exported="true" smoothing="false"/>
+    <image id="dofe5y" name="large_numbers_0.PNG" path="/image/num/num1/"/>
+    <image id="dofe6a" name="large_numbers_9.PNG" path="/image/num/num1/"/>
+    <image id="dofe6b" name="large_numbers_7.PNG" path="/image/num/num1/"/>
+    <image id="dofe6c" name="large_numbers_6.PNG" path="/image/num/num1/"/>
+    <image id="dofe6d" name="large_numbers_5.PNG" path="/image/num/num1/"/>
+    <image id="dofe6e" name="large_numbers_4.PNG" path="/image/num/num1/"/>
+    <image id="dofe6f" name="large_numbers_3.PNG" path="/image/num/num1/"/>
+    <image id="dofe6g" name="large_numbers_2.PNG" path="/image/num/num1/"/>
+    <image id="dofe6h" name="large_numbers_13.png" path="/image/num/num1/"/>
+    <image id="dofe6i" name="large_numbers_12.PNG" path="/image/num/num1/"/>
+    <image id="dofe6j" name="large_numbers_10.PNG" path="/image/num/num1/"/>
+    <image id="dofe6k" name="large_numbers_1.PNG" path="/image/num/num1/"/>
+    <image id="dofe6l" name="large_numbers_8.PNG" path="/image/num/num1/"/>
+    <image id="mj346m" name="0.PNG" path="/image/effect/juice/" smoothing="false"/>
+    <image id="mj346n" name="1.PNG" path="/image/effect/juice/" smoothing="false"/>
+    <movieclip id="mj346o" name="juice.jta" path="/effect/" exported="true" smoothing="false"/>
+    <image id="paqp6u" name="img_door.PNG" path="/image/" smoothing="false"/>
+    <image id="thmt6v" name="tiny_digits_0.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt6w" name="tiny_digits_1.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt6x" name="tiny_digits_10.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt6y" name="tiny_digits_16.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt6z" name="tiny_digits_18.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt70" name="tiny_digits_19.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt71" name="tiny_digits_21.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt72" name="tiny_digits_22.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt73" name="tiny_digits_3.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt74" name="tiny_digits_4.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt75" name="tiny_digits_6.PNG" path="/image/num/num2/" smoothing="false"/>
+    <image id="thmt76" name="tiny_digits_8.PNG" path="/image/num/num2/" smoothing="false"/>
+    <movieclip id="thmt78" name="win.jta" path="/effect/" smoothing="false"/>
+    <image id="thmt79" name="GameFieldBorder.png" path="/image/"/>
+    <image id="thmt7a" name="GameFieldBottom.png" path="/image/" scale="9grid" scale9grid="1,1,4,4" smoothing="false"/>
+    <image id="thmt7b" name="info_back.png" path="/image/" scale9grid="17,15,34,5" smoothing="false"/>
+    <component id="jaxm7c" name="IllustrateView.xml" path="/ui/view/" exported="true"/>
+    <component id="jaxm7e" name="IllustrateItem.xml" path="/ui/item/" exported="true"/>
+    <component id="jaxm7f" name="MapInfoItem.xml" path="/ui/item/" exported="true"/>
+    <component id="kup67g" name="RuleView.xml" path="/ui/view/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>
