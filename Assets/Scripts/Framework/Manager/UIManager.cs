@@ -163,13 +163,23 @@ namespace GameFramework
                 ui.OpenPanel(arg);
                 return ui;
             }
-
         }
 
 
         public void CloseUIPanel<T>(T uiPanel) where T : UIBase
         {
             gameArea.RemoveChild(uiPanel.fui);
+        }
+
+        public T GetUIPanel<T>() where T : UIBase
+        {
+            string panelName = typeof(T).ToString();
+            if (uiLoaded.ContainsKey(panelName))
+            {
+                T ui = (T)uiLoaded[panelName];
+                return ui;
+            }
+            return null;
         }
     }
 }

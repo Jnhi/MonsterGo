@@ -32,6 +32,16 @@ public class MonsterGoModel : Singleton<MonsterGoModel>
     public bool isBattle = false;
 
     /// <summary>
+    /// 是否暂停
+    /// </summary>
+    public bool isPause = false;
+
+    /// <summary>
+    /// 魔法屏障持续时间
+    /// </summary>
+    public float magicBarrierTime = 0;
+
+    /// <summary>
     /// 当前连击次数
     /// </summary>
     public int curComboNum = 0;
@@ -115,6 +125,7 @@ public class MonsterGoModel : Singleton<MonsterGoModel>
         heroID = 0;
         score = 0;
         curLevelIndex = 0;
+        magicBarrierTime = 0;
         curMonster = null;
         curHero = null;
     }
@@ -124,11 +135,17 @@ public class MonsterGoModel : Singleton<MonsterGoModel>
     /// </summary>
     public void NextLevel()
     {
+        foreach (var item in tubeDatas)
+        {
+            magicBarrierTime += item.Value.percentage/25;
+        }
+        Log.Debug($"魔法屏障持续时间：{magicBarrierTime}");
         monsterBattleStack.Clear();
         tubeDatas.Clear();
         curStepNum = 0;
     }
 
+    
 
     /// <summary>
     /// 增加试管数据

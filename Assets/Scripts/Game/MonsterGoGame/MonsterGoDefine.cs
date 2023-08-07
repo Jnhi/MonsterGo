@@ -56,6 +56,11 @@ public enum IllustrateItemType
     Hero,
 }
 
+public class IllustrateViewParams
+{
+    public Action onClose;
+}
+
 public class GameOverParams
 {
     public bool isWin = false;

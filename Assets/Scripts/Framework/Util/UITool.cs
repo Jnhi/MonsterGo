@@ -41,12 +41,12 @@ public class UITool
     /// </summary>
     /// <param name="obj"></param>
     /// <returns></returns>
-    public static Vector2 LocalToScreenPos(GComponent obj){
-        return GRoot.inst.GlobalToLocal((obj.LocalToGlobal(Vector2.zero)));
+    public static Vector2 LocalToScreenPos(GObject obj){
+        return GRoot.inst.GlobalToLocal(obj.LocalToGlobal(Vector2.zero));
     }
 
     // 将FairyGUI的本地坐标转换为屏幕坐标，再转换为Unity的世界坐标
-    public static Vector3 GetScreenPosition(GObject comp,Vector2 localPosition)
+    public static Vector3 GetScreenPosition(GObject comp)
     {
         Vector2 screenPos = GRoot.inst.LocalToGlobal(comp.position);
         //原点位置转换

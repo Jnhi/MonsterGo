@@ -4,10 +4,10 @@
     <graph id="n4_kh36" name="bg4" xy="0,0" size="440,240" type="rect" lineSize="0" lineColor="#00575757" fillColor="#ff797979">
       <relation target="" sidePair="width-width,height-height"/>
     </graph>
-    <component id="n5_kh36" name="prgBattle" src="l8cm2t" fileName="sld_heroe.xml" xy="220,183" pivot="0.5,0" anchor="true" scale="5,5">
+    <component id="n5_kh36" name="prgBattle" src="l8cm2t" fileName="ui/comp/sld_heroe.xml" xy="220,183" pivot="0.5,0" anchor="true" scale="5,5">
       <Slider value="43" max="100"/>
     </component>
-    <text id="n9_a0cx" name="txtMapName" xy="43,125" size="353,58" font="ui://yled3jwothmto" fontSize="43" color="#ffffff" align="center" vAlign="middle" letterSpacing="10" autoSize="none" strokeColor="#000000" strokeSize="4" text="地牢"/>
+    <text id="n9_a0cx" name="txtMapName" xy="43,125" size="353,58" font="ui://yled3jwothmto" fontSize="43" color="#ffffff" align="center" vAlign="middle" letterSpacing="10" autoSize="none" strokeColor="#000000" strokeSize="4" text="地牢?"/>
     <list id="n10_bw90" name="monsterList" xy="0,0" size="440,20" layout="row" overflow="scroll" scroll="horizontal" colGap="4" defaultItem="ui://5c7mak86bw9042" autoClearItems="true">
       <item/>
       <item/>
@@ -38,5 +38,6 @@
     <text id="n26_dofe" name="txtMonsterDmg" xy="160,38" size="50,54" group="n28_dofe" font="ui://yled3jwothmto" fontSize="40" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" strokeSize="4" text="2"/>
     <text id="n27_dofe" name="txtHeroDmg" xy="230,38" size="50,54" group="n28_dofe" font="ui://yled3jwothmto" fontSize="40" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" strokeSize="4" text="2"/>
     <group id="n28_dofe" name="gDmgText" xy="160,38" size="120,54"/>
+    <movieclip id="n35_ayb0" name="mcRock" src="ayb07t" fileName="effect/rock.jta" xy="185,23" size="68,89" aspect="true" frame="9" playing="false"/>
   </displayList>
 </component>

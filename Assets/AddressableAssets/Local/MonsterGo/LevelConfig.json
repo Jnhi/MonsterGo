@@ -9,7 +9,7 @@
             3
         ],
         "generateTime": 10,
-        "maxWalkStep": 60
+        "maxWalkStep": 10
     },
     {
         "id": 1,

@@ -19,7 +19,7 @@ MonoBehaviour:
     assetLoadType: 0
     compressDataPackage: 0
     VideoUrl: 
-    DST: E:/GitRepository/ttfegame
+    DST: E:/GitRepository/test
     StreamCDN: 
     bundleHashLength: 32
     bundlePathIdentifier: StreamingAssets;
@@ -54,7 +54,7 @@ MonoBehaviour:
     fbslim: 0
     DeleteStreamingAssets: 1
     ProfilingMemory: 0
-    CleanBuild: 1
+    CleanBuild: 0
     CustomNodePath: 
     showMonitorSuggestModal: 0
     enableProfileStats: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 using System;
 using GameFramework;
 using UnityEngine.Scripting;
+using System.Collections;
 
 public class MidTubeComp : GComponent
 {
@@ -15,6 +16,9 @@ public class MidTubeComp : GComponent
     private GTextField txtCombo;
 
     private GMovieClip movieCauldron;
+
+    private MonsterGoModel monsterGoModel = MonsterGoModel.Instance;
+    private MonsterGoUtil monsterGoUtil = MonsterGoUtil.Instance;
 
     private Tween comboTween;
     [Preserve]
@@ -29,8 +33,7 @@ public class MidTubeComp : GComponent
         movieCauldron = GetChild("movieCauldron").asMovieClip;
         txtCombo = GetChild("txtCombo").asTextField;
         txtCombo.visible = false;
-        Sequence sequence = AnimationTool.ChangeTextColorSeq(txtCombo);
-
+        AnimationTool.ChangeTextColorSeq(txtCombo);
     }
 
     public void Init()
@@ -44,8 +47,7 @@ public class MidTubeComp : GComponent
             GLoader icon = tube.GetChild("icon").asLoader;
             sld.value = 0;
             icon.url = null;
-            Sequence quence = DOTween.Sequence();
-            tubesAnim.Add(quence);
+            tubesAnim.Add(null);
             tubes.Add(tube);
         }
         Log.Debug("初始化中间组件");
@@ -92,6 +94,75 @@ public class MidTubeComp : GComponent
         movieCauldron.playing = true;
     }
 
+    //果汁飞到屏障的动画
+    public IEnumerator JuiceToMagicBarrier(GComponent tube,int monsterID)
+    {
+
+        bool isAnimationComplete = false;
+        //创建果汁动画
+        GMovieClip juice = UIPackage.CreateObject("MonsterGo", "juice").asMovieClip;
+        this.parent.AddChild(juice);
+        juice.playing = true;
+        juice.SetScale(8, 8);
+
+        //计算果汁开始坐标
+        Vector2 startPos = UITool.LocalToScreenPos(tube);
+        juice.position = startPos;
+
+        MonsterGoView monsterGoView = UIManager.Instance.GetUIPanel<MonsterGoView>();
+
+        //计算果汁结束坐标
+        Vector2 endPos = UITool.LocalToScreenPos(monsterGoView.topBattleComp.mcRock);
+        //设置果汁颜色
+        Color NowColor;
+        bool isColor = ColorUtility.TryParseHtmlString(monsterGoUtil.GetMonsterColorByMonsterID(monsterID), out NowColor);
+        if (isColor)
+        {
+            juice.color = NowColor;
+        }
+
+        float duration = 0.5f;
+
+        //设置曲线路径
+        GPath _turningPath = new();
+        Vector2 mid = new(startPos.x + (endPos.x - startPos.x) / 2, endPos.y + 30);
+        _turningPath.Create(new GPathPoint(startPos), new GPathPoint(mid), new GPathPoint(endPos));
+        GTween.To(startPos, endPos, duration).SetUserData(true).SetTarget(this)
+            .SetPath(_turningPath)
+            .OnUpdate((GTweener tweener) =>
+            {
+                juice.position = tweener.value.vec2;
+            }).OnComplete(() =>
+            {
+                juice.Dispose();
+                isAnimationComplete = true;
+            });
+        yield return new WaitUntil(() => isAnimationComplete);
+    }
+
+    /// <summary>
+    /// 试管进度转成魔法屏障时间
+    /// </summary>
+    /// <returns></returns>
+    public IEnumerator ShowMagicBarrierAnim(){
+        List<IEnumerator> animationCoroutines = new();
+
+        foreach (var item in monsterGoModel.tubeDatas)
+        {
+            if (item.Value.percentage > 0)
+            {
+                animationCoroutines.Add(JuiceToMagicBarrier(tubes[item.Key],item.Value.monsterID));
+            }
+        }
+        yield return CoroutineManager.Instance.WaitForAllCoroutines(animationCoroutines);
+    }
+
+    /// <summary>
+    /// 为试管增加百分比
+    /// </summary>
+    /// <param name="tubeIndex"></param>
+    /// <param name="generateMonsterID"></param>
+    /// <param name="cb"></param>
     public void AddTubePercent(int tubeIndex, int generateMonsterID,Action cb = null)
     {
         MonsterGoModel model = MonsterGoModel.Instance;
@@ -109,6 +180,7 @@ public class MidTubeComp : GComponent
         // 如果存在大于100%的情况 进度条先到100 然后执行生成怪物的动画 然后在到当前值
         if (generateMonsterID != -1)
         {
+            monsterGoModel.isBattle = true;
 
             //要飞出去的怪物图片
             GImage aImage = UIPackage.CreateObject("MonsterGo", "monsters_" + model.tubeDatas[tubeIndex].monsterID).asImage;

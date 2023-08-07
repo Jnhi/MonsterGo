@@ -1,4 +1,5 @@
 
+using System;
 using FairyGUI;
 using GameFramework;
 
@@ -19,6 +20,10 @@ public class IllustrateView : UIBase
     public override void OpenPanel(object arg = null)
     {
         fui.MakeFullScreen();
+
+        IllustrateViewParams illustrateViewParams = (IllustrateViewParams)arg;
+        Action onClose = illustrateViewParams.onClose;
+
         btn1 = fui.GetChild("btn1").asButton;
         btn2 = fui.GetChild("btn2").asButton;
         btnClose = fui.GetChild("btnClose").asButton;
@@ -38,6 +43,7 @@ public class IllustrateView : UIBase
             }
         });
         btnClose.onClick.Set(()=>{
+            onClose.Invoke();
             ClosePanel();
         });
     }

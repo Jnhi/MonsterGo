@@ -71,7 +71,7 @@ public class MonsterGoView : UIBase
     // 定义刷新时间间隔（单位：秒）
     float refreshInterval = 15;
 
-    TopBattleComp topBattleComp;
+    public TopBattleComp topBattleComp;
 
     MidTubeComp midTubeComp;
 
@@ -119,7 +119,13 @@ public class MonsterGoView : UIBase
 
         btnIllustrate.onClick.Set(async () =>
         {
-            await UIManager.Instance.OpenUIPanelAsync<IllustrateView>();
+            PauseGame();
+            IllustrateViewParams illustrateViewParams = new IllustrateViewParams();
+            illustrateViewParams.onClose = () =>
+            {
+                ReStartGame();
+            };
+            await UIManager.Instance.OpenUIPanelAsync<IllustrateView>(illustrateViewParams);
         });
 
         btnRule.onClick.Set(async () =>
@@ -161,34 +167,11 @@ public class MonsterGoView : UIBase
         yield return DelAllBlock();
 
         // 补充所有方块
-        yield return FillEmptyBlocks();
+        // yield return FillEmptyBlocks();
+        yield return FillEmptyBlocksTest();
 
         UIManager.Instance.EnableClick();
     }
-
-    // /// <summary>
-    // /// 开始游戏
-    // /// </summary>
-    // /// <returns></returns>
-    // IEnumerator StartGame()
-    // {
-    //     MonsterGoModel model = MonsterGoModel.Instance;
-
-    //     model.InitHeroData();
-    //     midTubeComp.Init();
-    //     topBattleComp.Init(this);
-
-    //     txtScore.text = "0";
-
-    //     yield return InitializeBlocks();
-    //     // yield return InitializeBlocksTest();
-    //     List<MatchesData> matchesData = GetMatches();
-    //     if (matchesData.Count > 0)
-    //     {
-    //         // 递归执行连锁反应
-    //         yield return PerformMatchAndCollapse(matchesData);
-    //     }
-    // }
 
     /// <summary>
     /// 开始下一关
@@ -207,8 +190,17 @@ public class MonsterGoView : UIBase
         // 暂停下落
         CoroutineManager.Instance.StopCoroutine(dropCoroutine);
 
-        // 初始化试管数据，步数
+        // 显示魔法屏障动画
+        yield return midTubeComp.ShowMagicBarrierAnim();
+
+        // 初始化试管数据，步数，并且将试管中的进度转换成魔法屏障持续时间
         model.NextLevel();
+
+        //如果有魔法屏障时间 则播放动画
+        if (monsterGoModel.magicBarrierTime > 0)
+        {
+            topBattleComp.ShowRock();
+        }
 
         // 暂停顶部移动
         topBattleComp.StopWalk();
@@ -232,6 +224,22 @@ public class MonsterGoView : UIBase
         topBattleComp.StartWalk();
 
         UIManager.Instance.EnableClick();
+    }
+
+    /// <summary>
+    /// 暂停游戏
+    /// </summary>
+    public void PauseGame(){
+        monsterGoModel.isPause = true;
+        topBattleComp.PauseBattle();
+    }
+
+    /// <summary>
+    /// 恢复游戏
+    /// </summary>
+    public void ReStartGame(){
+        monsterGoModel.isPause = false;
+        topBattleComp.reStertBattle();
     }
 
     /// <summary>
@@ -289,6 +297,10 @@ public class MonsterGoView : UIBase
         float timer = 0; // 下落计时器
         while (true)
         {
+            while (monsterGoModel.isPause)
+            {
+                yield return null;
+            }
             //处理方块定时下落
             timer += Time.deltaTime;
             // Log.Debug(timer.ToString());
@@ -311,6 +323,106 @@ public class MonsterGoView : UIBase
         }
 
     }
+
+    /// <summary>
+    /// 补充新的方块
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator FillEmptyBlocksTest()
+    {
+                //int[,] testBlockData = new int[8, 8]
+        //{
+        //    { 0,0,0,0,0,0,0,0 },
+        //    { 0,0,0,0,0,0,0,0 },
+        //    { 0,0,0,0,0,0,0,0 },
+        //    { 0,0,0,0,0,0,0,0 },
+        //    { 0,0,0,0,0,0,0,0 },
+        //    { 0,0,0,0,0,0,0,0 },
+        //    { 3,4,1,0,0,0,0,0 },
+        //    { 1,1,2,3,4,5,6,7 },
+        //};
+
+        // int[,] testBlockData = new int[8, 8]
+        // {
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 1,3,1,4,2,2,3,2 },
+        // };
+
+        int[,] testBlockData = new int[8, 8]
+           {
+            { 9,9,9,9,9,9,9,9 },
+            { 9,9,9,9,9,9,9,9 },
+            { 9,9,9,9,9,9,9,9 },
+            { 9,9,9,9,9,9,9,9 },
+            { 9,9,9,9,9,9,9,9 },
+            { 0,1,1,1,1,3,0,3 },
+            { 1,1,1,1,1,1,2,3 },
+            { 2,1,0,1,0,1,3,1 },
+           };
+        /// <summary>
+        /// 生成列测试
+        /// </summary>
+        /// <value></value>
+        // int[,] testBlockData = new int[8, 8]
+        // {
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 9,9,9,9,9,9,9,9 },
+        //     { 1,1,1,1,1,1,1,1 },
+        //     { 1,2,1,1,2,1,1,2 },
+        //     { 1,3,1,1,3,1,1,3 },
+        // };
+
+        MonsterGoUtil monsterGoUtil = MonsterGoUtil.Instance;
+
+        // 播放动画
+        List<IEnumerator> animationCoroutines = new List<IEnumerator>();
+
+        Block[,] tempBlcok = new Block[colSize, rowSize];
+
+        for (int col = 0; col < colSize; col++)
+        {
+            for (int row = rowSize - 1; row >= 0; row--)
+            {
+                if (blocks[row, col] == null)
+                {
+                    int blockType = testBlockData[row, col];
+                    if (blockType != 9)
+                    {
+                        Block block = CreateBlock(row, col, blockType);
+                        tempBlcok[row, col] = block;
+                        // 播放生成动画
+                        animationCoroutines.Add(block.BornAnim(BornType.Fall));
+                    }
+                }
+            }
+        }
+
+        yield return CoroutineManager.Instance.WaitForAllCoroutines(animationCoroutines);
+
+        MonsterGoModel.Instance.curComboNum = 0;
+        midTubeComp.RefreshCombo(MonsterGoModel.Instance.curComboNum);
+
+        // 补充完成后，检查是否存在匹配的方块
+        List<MatchesData> matchesData = GetMatches();
+        if (matchesData.Count > 0)
+        {
+            yield return PerformMatchAndCollapse(matchesData);
+        }
+        else
+        {
+            isMoving = false;
+        }
+    }
+
 
     /// <summary>
     /// 补充新的方块
@@ -902,8 +1014,8 @@ public class MonsterGoView : UIBase
         float duration = 0.5f;
 
         //设置曲线路径
-        GPath _turningPath = new GPath();
-        Vector2 mid = new Vector2(startPos.x + (endPos.x - startPos.x) / 2, endPos.y + 30);
+        GPath _turningPath = new();
+        Vector2 mid = new(startPos.x + (endPos.x - startPos.x) / 2, endPos.y + 30);
         _turningPath.Create(new GPathPoint(startPos), new GPathPoint(mid), new GPathPoint(endPos));
         GTween.To(startPos, endPos, duration).SetUserData(true).SetTarget(this)
             .SetPath(_turningPath)

@@ -10,15 +10,7 @@
     <image id="qr757" name="monsters_35.PNG" path="/image/monster/" exported="true" smoothing="false"/>
     <image id="qr758" name="monsters_36.PNG" path="/image/monster/" exported="true" smoothing="false"/>
     <image id="qr759" name="monsters_37.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75a" name="monsters_38.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75b" name="monsters_39.PNG" path="/image/monster/" exported="true" smoothing="false"/>
     <image id="qr75c" name="monsters_4.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75d" name="monsters_40.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75e" name="monsters_41.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75f" name="monsters_42.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75g" name="monsters_43.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75h" name="monsters_44.PNG" path="/image/monster/" exported="true" smoothing="false"/>
-    <image id="qr75i" name="monsters_45.PNG" path="/image/monster/" exported="true" smoothing="false"/>
     <image id="qr75j" name="monsters_5.PNG" path="/image/monster/" exported="true" smoothing="false"/>
     <image id="qr75k" name="monsters_6.PNG" path="/image/monster/" exported="true" smoothing="false"/>
     <image id="qr75l" name="monsters_7.PNG" path="/image/monster/" exported="true" smoothing="false"/>
@@ -199,6 +191,16 @@
     <component id="jaxm7e" name="IllustrateItem.xml" path="/ui/item/" exported="true"/>
     <component id="jaxm7f" name="MapInfoItem.xml" path="/ui/item/" exported="true"/>
     <component id="kup67g" name="RuleView.xml" path="/ui/view/" exported="true"/>
+    <image id="ayb07n" name="01.PNG" path="/image/effect/rock/"/>
+    <image id="ayb07o" name="02.PNG" path="/image/effect/rock/"/>
+    <image id="ayb07p" name="03.PNG" path="/image/effect/rock/"/>
+    <image id="ayb07q" name="04.PNG" path="/image/effect/rock/"/>
+    <image id="ayb07r" name="05.PNG" path="/image/effect/rock/"/>
+    <image id="ayb07s" name="06.PNG" path="/image/effect/rock/"/>
+    <movieclip id="ayb07t" name="rock.jta" path="/effect/" smoothing="false"/>
+    <image id="ayb07y" name="monsters_97.png" path="/image/monster/"/>
+    <image id="ayb07z" name="monsters_98.png" path="/image/monster/"/>
+    <image id="ayb080" name="monsters_99.png" path="/image/monster/"/>
   </resources>
   <publish name=""/>
 </packageDescription>

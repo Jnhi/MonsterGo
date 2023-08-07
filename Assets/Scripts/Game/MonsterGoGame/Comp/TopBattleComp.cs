@@ -29,7 +29,7 @@ public class TopBattleComp : GComponent
     GGroup gHeroInfo;
     GGroup gMap;
 
-
+    public GMovieClip mcRock;
     GTextField txtMonsterDmg;
     GTextField txtHeroDmg;
     GTextField txtHeroNum;
@@ -64,7 +64,7 @@ public class TopBattleComp : GComponent
     /// </summary>
     Coroutine walkCoroutine = null;
 
-    MonsterGoModel monsterModel = MonsterGoModel.Instance;
+    MonsterGoModel monsterGoModel = MonsterGoModel.Instance;
     MonsterGoUtil monsterGoUtil = MonsterGoUtil.Instance;
 
     [Preserve]
@@ -93,6 +93,7 @@ public class TopBattleComp : GComponent
         prgBattle = GetChild("prgBattle").asSlider;
         txtMapName = GetChild("txtMapName").asTextField;
         monsterList = GetChild("monsterList").asList;
+        mcRock = GetChild("mcRock").asMovieClip;
         txtMHP = GetChild("txtMHP").asTextField;
         txtMATK = GetChild("txtMATK").asTextField;
         txtHHP = GetChild("txtHHP").asTextField;
@@ -116,17 +117,35 @@ public class TopBattleComp : GComponent
         monsterBeginFightX = this.width / 2 - 20 - loadMonster.width;
         heroBeginFightX = this.width / 2 + 20;
         gBattleInfo.visible = false;
+        mcRock.visible = false;
     }
 
     void RenderListItem(int index, GObject obj)
     {
         MonsterIcon item = (MonsterIcon)obj;
-        item.updataMonsterIcon(monsterModel.monsterBattleStack.ToArray()[index].id);
+        item.updataMonsterIcon(monsterGoModel.monsterBattleStack.ToArray()[index].id);
     }
 
     public override void Dispose()
     {
         base.Dispose();
+    }
+
+    /// <summary>
+    /// 显示岩石障碍
+    /// </summary>
+    public void ShowRock(){
+        mcRock.visible = true;
+        mcRock.SetPlaySettings(0, -1, 1, -1);
+        mcRock.playing = true;
+    }
+
+    /// <summary>
+    /// 隐藏岩石障碍
+    /// </summary>
+    public void HideRock(){
+        mcRock.visible = false;
+        mcRock.playing = false;
     }
 
     /// <summary>
@@ -137,12 +156,14 @@ public class TopBattleComp : GComponent
     {
         this.monsterGoView = monsterGoView;
         prgBattle.value = 0;
-        string levelName = monsterModel.levelConfig[monsterModel.curLevelIndex].name;
+        string levelName = monsterGoModel.levelConfig[monsterGoModel.curLevelIndex].name;
         txtMapName.text = levelName;
 
-        txtHeroNum.text = "x" + monsterModel.heroBattleStack.Count.ToString();
+        txtHeroNum.text = "x" + monsterGoModel.heroBattleStack.Count.ToString();
         Hero curHero = monsterGoUtil.getNextHero();
         loadHero.url = "ui://MonsterGo/heroes_" + curHero.id;
+        loadBg1.url = "ui://MonsterGo/environments_" + monsterGoModel.curLevelIndex;
+        loadBg2.url = "ui://MonsterGo/environments_" + monsterGoModel.curLevelIndex;
         RefreshBattleInfo();
     }
 
@@ -154,8 +175,8 @@ public class TopBattleComp : GComponent
     public void AddMonster(int monsterID)
     {
         Monster monster = new Monster(monsterID);
-        monsterModel.monsterBattleStack.Push(monster);
-        monsterList.numItems = monsterModel.monsterBattleStack.Count;
+        monsterGoModel.monsterBattleStack.Push(monster);
+        monsterList.numItems = monsterGoModel.monsterBattleStack.Count;
 
         Log.Debug($"增加怪物ID：{monsterID}");
 
@@ -378,7 +399,7 @@ public class TopBattleComp : GComponent
                 {
                     gHero.x = 400;
                     Hero curHero = monsterGoUtil.getNextHero();
-                    txtHeroNum.text = "x" + (monsterModel.heroBattleStack.Count + 1).ToString();
+                    txtHeroNum.text = "x" + (monsterGoModel.heroBattleStack.Count + 1).ToString();
                     if (curHero != null)
                     {
                         loadHero.url = "ui://MonsterGo/heroes_" + curHero.id;
@@ -413,7 +434,7 @@ public class TopBattleComp : GComponent
 
         if (monster.hp > 0)
         {
-            yield return AttackAnim(monster, monsterModel.curHero);
+            yield return AttackAnim(monster, monsterGoModel.curHero);
         }
     }
 
@@ -424,21 +445,21 @@ public class TopBattleComp : GComponent
     /// <returns></returns>
     private void RefreshBattleInfo()
     {
-        if (monsterModel.curMonster != null)
+        if (monsterGoModel.curMonster != null)
         {
             gMonsterInfo.visible = true;
-            txtMHP.text = $"血量：{monsterModel.curMonster.hp.ToString()}";
-            txtMATK.text = $"攻击：{(monsterModel.curMonster.att + monsterModel.curMonster.satt).ToString()}";
+            txtMHP.text = $"血量：{monsterGoModel.curMonster.hp.ToString()}";
+            txtMATK.text = $"攻击：{(monsterGoModel.curMonster.att + monsterGoModel.curMonster.satt).ToString()}";
         }
         else
         {
             gMonsterInfo.visible = false;
         }
-        if (monsterModel.curHero != null)
+        if (monsterGoModel.curHero != null)
         {
             gHeroInfo.visible = true;
-            txtHHP.text = $"血量：{monsterModel.curHero.hp.ToString()}";
-            txtHATK.text = $"攻击：{monsterModel.curHero.att.ToString()}";
+            txtHHP.text = $"血量：{monsterGoModel.curHero.hp.ToString()}";
+            txtHATK.text = $"攻击：{monsterGoModel.curHero.att.ToString()}";
         }
         else
         {
@@ -453,7 +474,7 @@ public class TopBattleComp : GComponent
     public IEnumerator DoAnim(Monster monster)
     {
 
-        monsterList.numItems = monsterModel.monsterBattleStack.Count;
+        monsterList.numItems = monsterGoModel.monsterBattleStack.Count;
 
         RefreshBattleInfo();
 
@@ -466,14 +487,22 @@ public class TopBattleComp : GComponent
         yield return DOTween.To(() => gMonster.x, x => gMonster.x = x, monsterBeginFightX, 1).SetAutoKill(true).WaitForCompletion();
 
         Log.Debug($"初始怪物血量{monster.hp}");
-        yield return AttackAnim(monster, monsterModel.curHero);
+        yield return AttackAnim(monster, monsterGoModel.curHero);
 
-        if (monsterModel.monsterBattleStack.Count > 0)
+        if (monsterGoModel.monsterBattleStack.Count > 0)
         {
             Monster nextMonster = monsterGoUtil.GetNextMonster();
             yield return DoAnim(nextMonster);
         }
 
+    }
+
+    public void PauseBattle(){
+        DOTween.PauseAll();
+    }
+
+    public void reStertBattle(){
+        DOTween.PlayAll();
     }
 
     /// <summary>
@@ -482,16 +511,16 @@ public class TopBattleComp : GComponent
     /// <returns></returns>
     public IEnumerator DoBattleAnim()
     {
-        if (monsterModel.monsterBattleStack.Count > 0)
+        if (monsterGoModel.monsterBattleStack.Count > 0)
         {
-            monsterModel.isBattle = true;
+            monsterGoModel.isBattle = true;
             Monster monster = monsterGoUtil.GetNextMonster();
             yield return DoAnim(monster);
         }
 
         CoroutineManager.Instance.StopCoroutine(doBattleAnimCoroutine);
         doBattleAnimCoroutine = null;
-        monsterModel.isBattle = false;
+        monsterGoModel.isBattle = false;
     }
 
     /// <summary>
@@ -499,12 +528,14 @@ public class TopBattleComp : GComponent
     /// </summary>
     public void NextLevel()
     {
-        string levelName = monsterModel.levelConfig[monsterModel.curLevelIndex].name;
+        loadBg1.url = "ui://MonsterGo/environments_" + monsterGoModel.curLevelIndex;
+        loadBg2.url = "ui://MonsterGo/environments_" + monsterGoModel.curLevelIndex;
+        string levelName = monsterGoModel.levelConfig[monsterGoModel.curLevelIndex].name;
         txtMapName.text = levelName;
         prgBattle.value = 0;
         gMonster.alpha = 0;
         gMonster.x = -61;
-        monsterModel.monsterBattleStack.Clear();
+        monsterGoModel.monsterBattleStack.Clear();
     }
 
     /// <summary>
@@ -536,34 +567,50 @@ public class TopBattleComp : GComponent
         float topBgTimer = 0; // 上方背景计时器
         while (true)
         {
-            //处理关卡倒计时
-            topBgTimer += Time.deltaTime;
-
-            if (topBgTimer >= monsterModel.intervalWalkTime)
+            while (monsterGoModel.isPause)
             {
-                while (monsterModel.isBattle)
-                {
-                    yield return null;
-                }
-                monsterModel.curStepNum += 1;
-                yield return Walk();
-                topBgTimer = 0;
-                if (monsterModel.curStepNum >= monsterGoUtil.GetCurLevelMaxWalkStep() && monsterGoView.isMoving != true)
-                {
-                    monsterModel.curLevelIndex += 1;
-                    if (monsterModel.curLevelIndex < monsterModel.levelConfig.Length)
-                    {
-                        //下一关
-                        CoroutineManager.Instance.StartCoroutine(monsterGoView.NextLevel());
-                        yield break;
-                    }
-                    else
-                    {
-                        //游戏结束
-                        monsterGoView.GameOver(false);
-                        yield break;
-                    }
+                yield return null;
+            }
 
+            if (monsterGoModel.magicBarrierTime > 0)
+            {
+                monsterGoModel.magicBarrierTime -= Time.deltaTime;
+                // Log.Debug(monsterGoModel.magicBarrierTime.ToString());
+                if (monsterGoModel.magicBarrierTime <= 0)
+                {
+                    HideRock();
+                }
+            }
+            else
+            {
+            //处理关卡倒计时
+                topBgTimer += Time.deltaTime;
+
+                if (topBgTimer >= monsterGoModel.intervalWalkTime)
+                {
+                    while (monsterGoModel.isBattle)
+                    {
+                        yield return null;
+                    }
+                    monsterGoModel.curStepNum += 1;
+                    yield return Walk();
+                    topBgTimer = 0;
+                    if (monsterGoModel.curStepNum >= monsterGoUtil.GetCurLevelMaxWalkStep() && monsterGoView.isMoving != true)
+                    {
+                        monsterGoModel.curLevelIndex += 1;
+                        if (monsterGoModel.curLevelIndex < monsterGoModel.levelConfig.Length)
+                        {
+                            //下一关
+                            CoroutineManager.Instance.StartCoroutine(monsterGoView.NextLevel());
+                            yield break;
+                        }
+                        else
+                        {
+                            //游戏结束
+                            monsterGoView.GameOver(false);
+                            yield break;
+                        }
+                    }
                 }
             }
             yield return null;
@@ -582,7 +629,7 @@ public class TopBattleComp : GComponent
         {
             loadBg2.x = -(loadBg1.width - loadBg1.x);
         }
-        string levelName = monsterModel.levelConfig[monsterModel.curLevelIndex].name;
-        prgBattle.value = ((float)monsterModel.curStepNum / (float)monsterGoUtil.GetCurLevelMaxWalkStep()) * 100;
+        string levelName = monsterGoModel.levelConfig[monsterGoModel.curLevelIndex].name;
+        prgBattle.value = ((float)monsterGoModel.curStepNum / (float)monsterGoUtil.GetCurLevelMaxWalkStep()) * 100;
     }
 }
